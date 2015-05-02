@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First and Awesome Sinatra App</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact Us</a>
+  </nav>
+  <%# All the code that is inside the ERB file that will use this layout %>
+  <%# will go in place of this yield below %>
+  <%= yield %>
+</body>
+</html>

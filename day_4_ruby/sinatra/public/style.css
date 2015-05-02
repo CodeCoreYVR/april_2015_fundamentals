@@ -1,0 +1,11 @@
+.bordered-table {
+  width: 100%;
+}
+
+.bordered-table, .bordered-table td, .bordered-table th {
+  border: 1px solid;
+}
+
+.bordered-table th {
+  width: 25%;
+}
