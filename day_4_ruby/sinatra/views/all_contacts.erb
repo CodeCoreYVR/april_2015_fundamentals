@@ -1,5 +1,5 @@
 <h1>All Contacts(<%= @contacts.size %>)</h1>
-<table class="bordered-table">
+<table class="table table-bordered table-striped">
   <tr>
     <th>First Name</th>
     <th>Last Name</th>
@@ -8,15 +8,17 @@
   </tr>
   <%# looping through the contacts to display a table row for each %>
   <% @contacts.each do |contact| %>
-    <tr>
+    <tr class="success">
       <td><%= contact.first_name %></td>
       <td><%= contact.last_name %></td>
       <td><%= contact.email %></td>
       <td>
-        <button type="button"><a href="/contact/<%= contact.id %>">View</a></button>
-        <form action="/contact/<%= contact.id %>" method="post">
+        <a href="/contact/<%= contact.id %>" class="btn btn-primary">
+          <span class="glyphicon glyphicon-eye-open"></span> View
+          </a>
+        <form action="/contact/<%= contact.id %>" method="post" class="delete-contact">
           <input type="hidden" name="_method" value="delete">
-          <input type="submit" value="Delete">
+          <input type="submit" class="btn btn-danger" value="Delete">
         </form>
       </td>
     </tr>

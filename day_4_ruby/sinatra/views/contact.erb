@@ -1,19 +1,29 @@
 <h1>Contact Us</h1>
 <form action="/contact" method="post">
-  <label for="first_name">First Name</label>
-  <input type="text" id="first_name" name="first_name">
-  <br>
-  <label for="last_name">Last Name</label>
-  <input type="text" id="last_name" name="last_name">
-  <br>
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email">
-  <br>
-  <label for="phone_number">Phone Number</label>
-  <input type="text" id="phone_number" name="phone_number">
-  <br>
-  <label for="message">Message</label>
-  <textarea id="message" name="message"></textarea>
-  <br>
-  <input type="submit" value="Contact Us">
+  <div class="form-group">
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name" class="form-control" placeholder="e.g. John">
+  </div>
+  <div class="form-group">
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last_name" class="form-control" placeholder="e.g. Smith">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+
+    <div class="input-group">
+      <div class="input-group-addon">@</div>
+      <input type="email" id="email" name="email" class="form-control">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="phone_number">Phone Number</label>
+    <input type="text" id="phone_number" name="phone_number" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" class="form-control"></textarea>
+    <p class="help-block">type a message in here</p>
+  </div>
+  <input type="submit" value="Contact Us" class="btn btn-primary">
 </form>

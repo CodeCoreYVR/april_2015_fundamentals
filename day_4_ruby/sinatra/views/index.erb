@@ -1,11 +1,85 @@
 <h1>Welcome to my Sinatra App</h1>
-<%= 5 + 5 %>
-<%= "hello".upcase %>
+
+<img src="/ruby.jpg" class="img-thumbnail">
+
+<div class="tabs">
+  <!-- Here you put the links to the tabs -->
+  <ul class="nav nav-tabs">
+    <li class="active">
+        <a href="#home" role="tab" data-toggle="tab">Home</a>
+    </li>
+    <li>
+      <a href="#tab1" data-toggle="tab">Tab 1</a>
+    </li>
+  </ul>
+
+  <!-- This is where the actual tabs go -->
+  <ul class="tab-content">
+    <div id="home" class="tab-pane"  role="tabpanel">
+      <p>Here is the content for the Home tab</p>
+    </div>
+    <div id="tab1" class="tab-pane"  role="tabpanel">
+      <p>Here is the contact for tab 1</p>
+    </div>
+  </ul>
+
+
+</div>
+
+
+<%#= 5 + 5 %>
+<%#= "hello".upcase %>
 <%# This is a comment in Ruby %>
 <!-- This is an HTML comment  -->
 
 <%# When using ERB blocks with no equal sign. The line won't display anything %>
 <%# We use such blocks for things like flow control and loops %>
-<% if 100 > 20 %>
-  <h2>Hi There</h2>
-<% end %>
+<%# if 100 > 20 %>
+  <!-- <h2>Hi There</h2> -->
+<%# end %>
+<div class="row">
+  <div class="col-md-1 red">
+    <div class="col-md-6 yellow">
+      Donec ullamcorper nulla non metus auctor fringilla.
+    </div>
+    <div class="col-md-6 green">
+      Donec ullamcorper nulla non metus auctor fringilla.
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-3 col-sm-6 col-xs-12 red">
+  Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis.
+  Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-12 yellow">
+  Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis.
+  Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-12 blue">
+  Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis.
+  Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-12 green">
+  Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis.
+  Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+</div>
+
+<br>
+<br>
+
+<div class="col-md-6 col-xs-12 red">
+  Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis.
+  Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+</div>
+
+<div class="col-md-6 col-xs-12 yellow">
+  Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis.
+  Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+</div>
+
+<hr>

@@ -9,3 +9,23 @@
 .bordered-table th {
   width: 25%;
 }
+
+.red {
+  background-color: #FF0000;
+}
+
+.yellow {
+  background-color: #FFFF00;
+}
+
+.blue {
+  background-color: #0000FF;
+}
+
+.green {
+  background-color: #00FF00;
+}
+
+.delete-contact {
+  display: inline;
+}

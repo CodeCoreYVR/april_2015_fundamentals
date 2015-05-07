@@ -2,16 +2,22 @@
 <html>
 <head>
   <title>My First and Awesome Sinatra App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/contact">Contact Us</a>
-  </nav>
-  <%# All the code that is inside the ERB file that will use this layout %>
-  <%# will go in place of this yield below %>
-  <%= yield %>
+  <div class="container-fluid">
+    <nav>
+      <a href="/"><span class="glyphicon glyphicon-tree-deciduous"></span> Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact Us</a>
+    </nav>
+    <%# All the code that is inside the ERB file that will use this layout %>
+    <%# will go in place of this yield below %>
+    <%= yield %>
+  </div>
 </body>
 </html>
